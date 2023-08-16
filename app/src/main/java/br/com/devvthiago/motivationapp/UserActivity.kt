@@ -1,6 +1,8 @@
 package br.com.devvthiago.motivationapp
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -32,8 +34,12 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun handleSave(){
+
+
+
         val name = binding.editName.text.toString()
         if (name != " ") {
+            SecurityPreferences(this).storeString("USERNAME", name)
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         } else {

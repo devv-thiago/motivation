@@ -19,12 +19,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         binding.buttonNewPhrase.setOnClickListener(this)
 
         supportActionBar?.hide()
+        val username = SecurityPreferences(this).getString("USERNAME")
+        binding.textUsername.text = "Olá, $username"
 
     }
     override fun onClick(view: View) {
         if (view.id == R.id.button_newPhrase){
-            var s = ""
-            println(s)
+
         }
     }
 
