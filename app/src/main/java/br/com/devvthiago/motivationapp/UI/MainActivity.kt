@@ -1,9 +1,11 @@
-package br.com.devvthiago.motivationapp
+package br.com.devvthiago.motivationapp.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
+import br.com.devvthiago.motivationapp.infrastructure.MotivationConstants
+import br.com.devvthiago.motivationapp.R
+import br.com.devvthiago.motivationapp.infrastructure.SecurityPreferences
 import br.com.devvthiago.motivationapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener{
@@ -19,7 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         binding.buttonNewPhrase.setOnClickListener(this)
 
         supportActionBar?.hide()
-        val username = SecurityPreferences(this).getString("USERNAME")
+        val username = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
         binding.textUsername.text = "Olá, $username"
 
     }

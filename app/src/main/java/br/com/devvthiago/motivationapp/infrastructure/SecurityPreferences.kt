@@ -1,4 +1,4 @@
-package br.com.devvthiago.motivationapp
+package br.com.devvthiago.motivationapp.infrastructure
 
 import android.content.Context
 import android.content.SharedPreferences
