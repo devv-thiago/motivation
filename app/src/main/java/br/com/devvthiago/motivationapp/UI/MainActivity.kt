@@ -3,6 +3,7 @@ package br.com.devvthiago.motivationapp.UI
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat
 import br.com.devvthiago.motivationapp.infrastructure.MotivationConstants
 import br.com.devvthiago.motivationapp.R
 import br.com.devvthiago.motivationapp.infrastructure.SecurityPreferences
@@ -28,6 +29,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
     override fun onClick(view: View) {
         if (view.id == R.id.button_newPhrase){
 
+        } else if (view.id in listOf(R.id.image_all, R.id.image_faces, R.id.image_sunny)) {
+            handleFilter(view.id)
+        }
+    }
+
+    private fun handleFilter(id: Int){
+
+        when (id) {
+            R.id.image_all -> {
+                binding.imageAll.setColorFilter(ContextCompat.getColor(this,R.color.white))
+            }
+            R.id.image_faces -> {
+                binding.imageFaces.setColorFilter(ContextCompat.getColor(this,R.color.white))
+            }
+            R.id.image_sunny -> {
+                binding.imageSunny.setColorFilter(ContextCompat.getColor(this,R.color.white))
+            }
         }
     }
 
