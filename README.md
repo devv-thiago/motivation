@@ -1,5 +1,5 @@
 # Motivation
-![Kotlin](https://camo.githubusercontent.com/c6a93410baf71991a808a96a2fcc4241401eb9313b6e8d474c6d587f91e1582b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b6f746c696e2d3030393544353f267374796c653d666f722d7468652d6261646765266c6f676f3d6b6f746c696e266c6f676f436f6c6f723d7768697465)
+![Kotlin](https://camo.githubusercontent.com/c6a93410baf71991a808a96a2fcc4241401eb9313b6e8d474c6d587f91e1582b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4b6f746c696e2d3030393544353f267374796c653d666f722d7468652d6261646765266c6f676f3d6b6f746c696e266c6f676f436f6c6f723d7768697465) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
 
 Este aplicativo de Frases Motivacionais em Kotlin é projetado para fornecer inspiração e motivação diária aos usuários, utilizando shared preferences para guardar o nome do usuário criando um experiência mais única com o usuário.
 
